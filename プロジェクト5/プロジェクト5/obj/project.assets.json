@@ -6237,11 +6237,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Proyectos\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj",
+      "projectUniqueName": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj",
       "projectName": "プロジェクト5",
-      "projectPath": "D:\\Proyectos\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj",
+      "projectPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj",
       "packagesPath": "C:\\Users\\Kids3\\.nuget\\packages\\",
-      "outputPath": "D:\\Proyectos\\プロジェクト5\\プロジェクト5\\obj\\",
+      "outputPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kids3\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6257,8 +6257,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Proyectos\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj": {
-              "projectPath": "D:\\Proyectos\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj"
+            "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj": {
+              "projectPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj"
             }
           }
         }

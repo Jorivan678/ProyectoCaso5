@@ -140,7 +140,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDBContext.cs" />
+    <Compile Include="IContainerRepository.cs" />
     <Compile Include="IRepository.cs" />
+    <Compile Include="ContainerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLRepository.cs" />
   </ItemGroup>
