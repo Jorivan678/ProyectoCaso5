@@ -1,29 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj": {}
+    "D:\\Proyectos\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj": {}
   },
   "projects": {
-    "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj": {
+    "D:\\Proyectos\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj",
+        "projectUniqueName": "D:\\Proyectos\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj",
         "projectName": "プロジェクト5.Models",
-        "projectPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj"
+        "projectPath": "D:\\Proyectos\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj": {
+    "D:\\Proyectos\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj",
+        "projectUniqueName": "D:\\Proyectos\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj",
         "projectName": "プロジェクト5.Services",
-        "projectPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj",
+        "projectPath": "D:\\Proyectos\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj": {
-                "projectPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj"
+              "D:\\Proyectos\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj": {
+                "projectPath": "D:\\Proyectos\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj"
               }
             }
           }
@@ -33,14 +33,14 @@
         "net472": {}
       }
     },
-    "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj": {
+    "D:\\Proyectos\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj",
+        "projectUniqueName": "D:\\Proyectos\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj",
         "projectName": "プロジェクト5",
-        "projectPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj",
+        "projectPath": "D:\\Proyectos\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj",
         "packagesPath": "C:\\Users\\Kids3\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\obj\\",
+        "outputPath": "D:\\Proyectos\\プロジェクト5\\プロジェクト5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kids3\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,8 +56,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj": {
-                "projectPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj"
+              "D:\\Proyectos\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj": {
+                "projectPath": "D:\\Proyectos\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj"
               }
             }
           }
