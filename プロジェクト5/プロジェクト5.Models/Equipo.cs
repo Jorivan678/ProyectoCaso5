@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,9 @@ namespace プロジェクト5.Models
 {
     public class Equipo : BaseEntity
     {
+        [Display(Name="Nombre del Equipo")]
         public string NomEquip { get; set; }
+        [Display(Name ="Logo del Equipo")]
         public byte[] Logo { get; set; }
 
         //Navegabilidad

@@ -32,6 +32,7 @@ namespace プロジェクト5
             services.AddRazorPages();
             services.AddScoped<AppDBContext>();
             services.AddScoped(typeof(IRepository<>), typeof(SQLRepository<>));
+            services.AddScoped<IEquipoRepository, EquipoRepository>();
             
             services.AddRouting(option => {
                 option.LowercaseUrls = true;
