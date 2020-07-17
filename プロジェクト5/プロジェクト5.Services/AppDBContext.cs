@@ -19,7 +19,6 @@ namespace プロジェクト5.Services
         public DbSet<Jugador> Jugadores { get; set; }
         public DbSet<Partido> Partidos { get; set; }
         public DbSet<ResultadoPartido> ResultadoPartidos { get; set; }
-        public DbSet<User> Users { get; set; }
         public DbSet<UserPage> UserPages { get; set; }
     }
 }

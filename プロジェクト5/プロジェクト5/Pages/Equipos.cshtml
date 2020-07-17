@@ -1,0 +1,35 @@
+﻿@page
+@model プロジェクト5.Pages.EquiposModel
+@{
+    ViewData["Title"] = "Equipos";
+}
+
+<h1>Equipos</h1>
+@if (Model.Equipos.Any())
+{
+    <table class="table table-info table-striped">
+        <!--HEAD-->
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">@Html.DisplayNameFor(x => x.Equipos.FirstOrDefault().NomEquip)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Equipos.FirstOrDefault().Logo)</th>
+            </tr>
+        </thead>
+        <!--BODY-->
+        <tbody>
+            @foreach (var item in Model.Equipos)
+            {
+                <tr>
+                    <td scope="row">@Html.DisplayFor(m => item.NomEquip)</td>
+                    <td>@Html.DisplayFor(m => item.Logo)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="mx-auto text-center">
+        <span class="text-danger">No se econtraron Equipos</span>
+    </div>
+}
