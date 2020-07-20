@@ -20,8 +20,6 @@ namespace プロジェクト5.Models
         public string Posicion { get; set; }
         [Display(Name = "Fecha de nacimiento")]
         public DateTime FechNac { get; set; }
-        [Display(Name = "Fecha de fichado")]
-        public DateTime FechFich { get; set; }
         [Display(Name = "Foto del Jugador")]
         public byte[] FotoJug { get; set; }
 

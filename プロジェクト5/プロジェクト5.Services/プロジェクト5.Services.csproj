@@ -9,6 +9,14 @@
     <Compile Remove="Migrations\20200717205222_FirstMigration.Designer.cs" />
     <Compile Remove="Migrations\20200717211326_Prueba1.cs" />
     <Compile Remove="Migrations\20200717211326_Prueba1.Designer.cs" />
+    <Compile Remove="Migrations\20200720035018_Migration1.cs" />
+    <Compile Remove="Migrations\20200720035018_Migration1.Designer.cs" />
+    <Compile Remove="Migrations\20200720035818_Prueba1.cs" />
+    <Compile Remove="Migrations\20200720035818_Prueba1.Designer.cs" />
+    <Compile Remove="Migrations\20200720060154_Prueba2.cs" />
+    <Compile Remove="Migrations\20200720060154_Prueba2.Designer.cs" />
+    <Compile Remove="Migrations\20200720060550_MigrationDefinitive.cs" />
+    <Compile Remove="Migrations\20200720060550_MigrationDefinitive.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,10 +31,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\プロジェクト5.Models\プロジェクト5.Models.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

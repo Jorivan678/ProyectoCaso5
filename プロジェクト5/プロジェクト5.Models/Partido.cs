@@ -19,14 +19,14 @@ namespace プロジェクト5.Models
 
         //Equipo local
         [ForeignKey("Equipo")]
-        public int IdEquipo { get; set; }
+        public int? IdEquipo { get; set; }
         public Equipo Equipo { get; set; }
         [Display(Name ="Cantidad de Jugadores Locales")]
         public int TotalJugLc { get; set; }
 
         //Equipo visitante
         [ForeignKey("EquipoSub")]
-        public int IdEquipoSub { get; set; }
+        public int? IdEquipoSub { get; set; }
         public EquipoSub EquipoSub { get; set; }
         [Display(Name = "Cantidad de Jugadores Visitantes")]
         public int TotalJugVis { get; set; }

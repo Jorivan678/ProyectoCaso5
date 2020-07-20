@@ -16,6 +16,6 @@ namespace プロジェクト5.Models
         public Equipo Equipo { get; set; }
 
         //Navegabilidad
-        public ICollection<ResultadoPartido> ResultadoPartidos { get; set; }
+        public ICollection<Partido> Partidos { get; set; }
     }
 }
