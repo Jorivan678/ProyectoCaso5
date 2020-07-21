@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using プロジェクト5.Models;
 using プロジェクト5.Services;
 
-namespace プロジェクト5.Pages
+namespace プロジェクト5.Pages.Team
 {
     public class EquiposModel : PageModel
     {

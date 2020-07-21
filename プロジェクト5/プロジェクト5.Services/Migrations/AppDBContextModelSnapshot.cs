@@ -29,8 +29,8 @@ namespace プロジェクト5.Services.Migrations
                     b.Property<DateTime>("CreatedAT")
                         .HasColumnType("datetime2");
 
-                    b.Property<byte[]>("Logo")
-                        .HasColumnType("varbinary(max)");
+                    b.Property<string>("Logo")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NomEquip")
                         .HasColumnType("nvarchar(max)");
@@ -91,8 +91,8 @@ namespace プロジェクト5.Services.Migrations
                     b.Property<DateTime>("FechNac")
                         .HasColumnType("datetime2");
 
-                    b.Property<byte[]>("FotoJug")
-                        .HasColumnType("varbinary(max)");
+                    b.Property<string>("FotoJug")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IdEquipo")
                         .HasColumnType("int");

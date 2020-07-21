@@ -12,7 +12,7 @@ namespace プロジェクト5.Models
         [Display(Name="Nombre del Equipo")]
         public string NomEquip { get; set; }
         [Display(Name ="Logo del Equipo")]
-        public byte[] Logo { get; set; }
+        public string Logo { get; set; }
 
         //Navegabilidad
         public ICollection<Partido> Partidos { get; set; }

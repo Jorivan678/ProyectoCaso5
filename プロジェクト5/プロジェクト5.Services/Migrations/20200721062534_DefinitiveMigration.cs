@@ -17,7 +17,7 @@ namespace プロジェクト5.Services.Migrations
                     CreatedAT = table.Column<DateTime>(nullable: false),
                     UpdatedAT = table.Column<DateTime>(nullable: true),
                     NomEquip = table.Column<string>(nullable: true),
-                    Logo = table.Column<byte[]>(nullable: true)
+                    Logo = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -78,7 +78,7 @@ namespace プロジェクト5.Services.Migrations
                     ApellidoM = table.Column<string>(nullable: true),
                     Posicion = table.Column<string>(nullable: true),
                     FechNac = table.Column<DateTime>(nullable: false),
-                    FotoJug = table.Column<byte[]>(nullable: true),
+                    FotoJug = table.Column<string>(nullable: true),
                     IdEquipo = table.Column<int>(nullable: false)
                 },
                 constraints: table =>

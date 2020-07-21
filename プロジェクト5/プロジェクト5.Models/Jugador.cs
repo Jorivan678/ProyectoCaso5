@@ -21,7 +21,7 @@ namespace プロジェクト5.Models
         [Display(Name = "Fecha de nacimiento")]
         public DateTime FechNac { get; set; }
         [Display(Name = "Foto del Jugador")]
-        public byte[] FotoJug { get; set; }
+        public string FotoJug { get; set; }
 
         //Referencia
         [ForeignKey("Equipo")]
