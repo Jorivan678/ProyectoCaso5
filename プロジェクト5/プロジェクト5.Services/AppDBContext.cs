@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using プロジェクト5.Models;
 
 namespace プロジェクト5.Services
 {
-    public class AppDBContext : DbContext
+    public class AppDBContext : IdentityDbContext<ApplicationUser>
     {
         public AppDBContext(DbContextOptions<AppDBContext> options) : base(options)
         {
@@ -19,6 +21,5 @@ namespace プロジェクト5.Services
         public DbSet<Jugador> Jugadores { get; set; }
         public DbSet<Partido> Partidos { get; set; }
         public DbSet<ResultadoPartido> ResultadoPartidos { get; set; }
-        public DbSet<UserPage> UserPages { get; set; }
     }
 }
