@@ -10,7 +10,7 @@ using プロジェクト5.Models;
 
 namespace プロジェクト5.Services
 {
-    public class AppDBContext : IdentityDbContext<ApplicationUser>
+    public class AppDBContext : IdentityDbContext
     {
         public AppDBContext(DbContextOptions<AppDBContext> options) : base(options)
         {

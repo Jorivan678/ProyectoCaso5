@@ -1,0 +1,57 @@
+﻿@page
+@model プロジェクト5.Pages.Player.JugadoresModel
+@{
+    ViewData["Title"] = "Jugadores";
+}
+
+<h1>Jugadores</h1>
+<div class="d-flex justify-content-end p-2">
+    <a asp-page="/Player/AgregarJugador" class="btn btn-primary m-2" role="button">Agregar Jugador</a>
+</div>
+@if (Model.Jugadores.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">@Html.DisplayNameFor(x => x.Jugadores.FirstOrDefault().FotoJug)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Jugadores.FirstOrDefault().NomJug)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Jugadores.FirstOrDefault().ApellidoP)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Jugadores.FirstOrDefault().ApellidoM)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Jugadores.FirstOrDefault().Posicion)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Equipos.FirstOrDefault().NomEquip)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Jugadores.FirstOrDefault().FechNac)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Jugadores.FirstOrDefault().CreatedAT)</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Jugadores)
+            {
+                var imgPath = $"~/images/{(string.IsNullOrEmpty(item.FotoJug) ? "" : item.FotoJug)}";
+                <tr>
+                    <th scope="row" class="tab-content"><img class="tab-content img-thumbnail imgThumbnail" src="@imgPath" alt="@item.CreatedAT" asp-append-version="true"></th>
+                    <td>@Html.DisplayFor(m => item.NomJug)</td>
+                    <td>@Html.DisplayFor(m => item.ApellidoP)</td>
+                    <td>@Html.DisplayFor(m => item.ApellidoM)</td>
+                    <td>@Html.DisplayFor(m => item.Posicion)</td>
+                        @foreach (var con in Model.Equipos)
+                        {
+                            @if (item.IdEquipo == con.Id)
+                            {
+                                <td>@Html.DisplayFor(m => con.NomEquip)</td>
+                            }
+                        }
+                    <td>@Html.DisplayFor(m => item.FechNac)</td>
+                    <td>@Html.DisplayFor(m => item.CreatedAT)</td>
+                    <td><button class="btn btn-success btn-sm">Editar</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="border align-text-top">
+        <p>No existen jugadores registrados.</p>
+    </div>
+}

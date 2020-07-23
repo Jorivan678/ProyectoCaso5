@@ -31,10 +31,13 @@ namespace プロジェクト5
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContextPool<AppDBContext>(option => {
-                option.UseSqlServer(Configuration.GetConnectionString("EFDbConnection"));
-            });
-            services.AddRazorPages();
+            services.AddDbContext<AppDBContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("EFDbConnection")));
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<AppDBContext>();
+
+        services.AddRazorPages();
             services.AddScoped<AppDBContext>();
             services.AddScoped(typeof(IRepository<>), typeof(SQLRepository<>));
             services.AddScoped<IEquipoRepository, EquipoRepository>();
@@ -44,25 +47,6 @@ namespace プロジェクト5
                 option.LowercaseQueryStrings = true;
                 option.AppendTrailingSlash = true;
             });
-
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<AppDBContext>()
-                .AddDefaultTokenProviders();
-
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options =>
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                   ValidateIssuer = true,
-                   ValidateAudience = true,
-                   ValidateLifetime = true,
-                   ValidateIssuerSigningKey = true,
-                   ValidIssuer = "yourdomain.com",
-                   ValidAudience = "yourdomain.com",
-                   IssuerSigningKey = new SymmetricSecurityKey(
-                   Encoding.UTF8.GetBytes(Configuration["Llave_super_secreta"])),
-                   ClockSkew = TimeSpan.Zero
-                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -82,10 +66,10 @@ namespace プロジェクト5
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            app.UseAuthentication();
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

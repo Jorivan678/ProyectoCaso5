@@ -14,13 +14,27 @@ namespace プロジェクト5.Pages
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "D:\Proyectos\事例5プロジェクト\プロジェクト5\プロジェクト5\Pages\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "D:\Proyectos\事例5プロジェクト\プロジェクト5\プロジェクト5\Pages\_ViewImports.cshtml"
+using プロジェクト5.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "D:\Proyectos\事例5プロジェクト\プロジェクト5\プロジェクト5\Pages\_ViewImports.cshtml"
 using プロジェクト5;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1f02565c188bc0cf60de1bc120acef71a3608055", @"/Pages/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cf348861d056e242da7cc8a89be3f195d6308e20", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5c7a03eb62bff1a1035c00c384c2f7195baa772e", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Error : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         #pragma warning disable 1998

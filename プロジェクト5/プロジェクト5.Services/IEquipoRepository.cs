@@ -8,7 +8,7 @@ using プロジェクト5.Models;
 
 namespace プロジェクト5.Services
 {
-    public interface IEquipoRepository
+    public interface IEquipoRepository : IRepository<Jugador>
     {
         public IEnumerable<Equipo> GetEquipos();
     }

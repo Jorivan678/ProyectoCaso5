@@ -150,6 +150,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.6, )"
+            },
+            "Microsoft.IdentityModel.Clients.ActiveDirectory": {
+              "target": "Package",
+              "version": "[5.2.8, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.7.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.7.1, )"
             }
           },
           "imports": [
@@ -247,6 +259,12 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.6, )"
+            },
+            "Microsoft.TypeScript.MSBuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.9.7, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

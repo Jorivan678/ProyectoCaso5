@@ -8,7 +8,7 @@ using プロジェクト5.Models;
 
 namespace プロジェクト5.Services
 {
-    public class EquipoRepository : SQLRepository<Equipo>, IEquipoRepository
+    public class EquipoRepository : SQLRepository<Jugador>, IEquipoRepository
     {
         public EquipoRepository(AppDBContext context) : base(context) { }
 

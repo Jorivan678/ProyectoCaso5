@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +9,7 @@ using プロジェクト5.Models;
 using プロジェクト5.Services;
 
 namespace プロジェクト5.Pages.Team
-{
+{ 
     public class EquiposModel : PageModel
     {
         private readonly IRepository<Equipo> repository;

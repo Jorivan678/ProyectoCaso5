@@ -10,13 +10,13 @@ namespace プロジェクト5.Models
 {
     public class Jugador : BaseEntity
     {
-        [Display(Name ="Nombre del Jugador")]
+        [Display(Name ="Nombre")]
         public string NomJug { get; set; }
-        [Display(Name = "Apellido paterno del Jugador")]
+        [Display(Name = "Apellido paterno")]
         public string ApellidoP { get; set; }
-        [Display(Name = "Apellido materno del Jugador")]
+        [Display(Name = "Apellido materno")]
         public string ApellidoM { get; set; }
-        [Display(Name = "Posicion")]
+        [Display(Name = "Posición")]
         public string Posicion { get; set; }
         [Display(Name = "Fecha de nacimiento")]
         public DateTime FechNac { get; set; }
