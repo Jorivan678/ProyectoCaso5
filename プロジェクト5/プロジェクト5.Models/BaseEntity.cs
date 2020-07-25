@@ -11,7 +11,7 @@ namespace プロジェクト5.Models
     public class BaseEntity : IEntity
     {
         public int Id { get; set; }
-        [Display(Name="Estatus")]
+        [Display(Name="Estado")]
         public bool Status { get; set; }
         [Display(Name ="Fecha de creación")]
         public DateTime CreatedAT { get; set; } = DateTime.Now;

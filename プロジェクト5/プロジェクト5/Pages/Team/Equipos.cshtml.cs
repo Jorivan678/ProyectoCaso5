@@ -12,17 +12,17 @@ namespace プロジェクト5.Pages.Team
 { 
     public class EquiposModel : PageModel
     {
-        private readonly IRepository<Equipo> repository;
+        private readonly IRepository<Equipo> Repository;
         public IEnumerable<Equipo> Equipos { get; private set; }
         public EquiposModel(IRepository<Equipo> repository)
         {
-            this.repository = repository;
+            Repository = repository;
         }
         public IActionResult OnGet()
         {
             try
             {
-                Equipos = repository.GetAll();
+                Equipos = Repository.GetAll();
                 return Page();
             }
             catch(Exception ex)

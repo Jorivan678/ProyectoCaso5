@@ -280,3 +280,4 @@ D:\Proyectos\事例5プロジェクト\プロジェクト5\プロジェクト5\o
 D:\Proyectos\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 D:\Proyectos\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Pages\Player\Jugadores.cshtml.g.cs
 D:\Proyectos\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Pages\Player\AgregarJugador.cshtml.g.cs
+D:\Proyectos\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Pages\Team\ActualizarEquipo.cshtml.g.cs
