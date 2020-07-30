@@ -1,0 +1,72 @@
+﻿@page
+@model プロジェクト5.Pages.Game.AgregarPartidoModel
+
+<h4>Agregar Partido</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" class="mt-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Partido.FechPart" class="control-label"></label>
+                <input asp-for="Partido.FechPart" class="form-control" />
+                <span asp-validation-for="Partido.FechPart" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.TiemJugado" class="control-label"></label>
+                <input asp-for="Partido.TiemJugado" class="form-control" />
+                <span asp-validation-for="Partido.TiemJugado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.Estadio" class="control-label"></label>
+                <input asp-for="Partido.Estadio" class="form-control" />
+                <span asp-validation-for="Partido.Estadio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.IdEquipo" class="control-label">Equipo Local</label>
+                <select asp-for="Partido.IdEquipo" class="form-control" asp-items="ViewBag.IdEquipo"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.TotalJugLc" class="control-label"></label>
+                <input asp-for="Partido.TotalJugLc" class="form-control" />
+                <span asp-validation-for="Partido.TotalJugLc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.IdEquipoSub" class="control-label">Equipo Visitante</label>
+                <select asp-for="Partido.IdEquipoSub" class="form-control" asp-items="ViewBag.IdEquipoSub"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.TotalJugVis" class="control-label"></label>
+                <input asp-for="Partido.TotalJugVis" class="form-control" />
+                <span asp-validation-for="Partido.TotalJugVis" class="text-danger"></span>
+            </div>
+            <div class="row form-group">
+                <label class="col-form-label col-sm-2" asp-for="Partido.Status"></label>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="radio1">
+                        <input type="radio" asp-for="Partido.Status" class="form-check-label" role="radio" value="true" id="radio1" />
+                        Activo
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="radio2">
+                        <input type="radio" asp-for="Partido.Status" class="form-check-label" role="radio" value="false" id="radio2" />
+                        Inactivo
+                    </label>
+                    <span asp-validation-for="Partido.Status" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Agregar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Jugadores">Regresar a Jugadores</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

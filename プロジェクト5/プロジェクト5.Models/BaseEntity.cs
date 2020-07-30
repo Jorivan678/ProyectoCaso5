@@ -16,6 +16,6 @@ namespace プロジェクト5.Models
         [Display(Name ="Fecha de creación")]
         public DateTime CreatedAT { get; set; } = DateTime.Now;
         [Display(Name = "Fecha de actualización")]
-        public DateTime? UpdatedAT { get; set; }
+        public DateTime? UpdatedAT { get; set; } = DateTime.Now;
     }
 }

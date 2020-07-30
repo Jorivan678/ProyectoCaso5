@@ -3484,10 +3484,7 @@
         },
         "runtime": {
           "bin/placeholder/プロジェクト5.Models.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "プロジェクト5.Services/1.0.0": {
         "type": "project",
@@ -3507,10 +3504,7 @@
         },
         "runtime": {
           "bin/placeholder/プロジェクト5.Services.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
@@ -10529,17 +10523,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kids3\\.nuget\\packages\\": {}
+    "C:\\Users\\Kids3\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj",
+      "projectUniqueName": "D:\\Proyectos\\ProyectoCaso5\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj",
       "projectName": "プロジェクト5",
-      "projectPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj",
+      "projectPath": "D:\\Proyectos\\ProyectoCaso5\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\プロジェクト5.csproj",
       "packagesPath": "C:\\Users\\Kids3\\.nuget\\packages\\",
-      "outputPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\obj\\",
+      "outputPath": "D:\\Proyectos\\ProyectoCaso5\\事例5プロジェクト\\プロジェクト5\\プロジェクト5\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\Kids3\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -10554,8 +10552,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj": {
-              "projectPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj"
+            "D:\\Proyectos\\ProyectoCaso5\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj": {
+              "projectPath": "D:\\Proyectos\\ProyectoCaso5\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Services\\プロジェクト5.Services.csproj"
             }
           }
         }

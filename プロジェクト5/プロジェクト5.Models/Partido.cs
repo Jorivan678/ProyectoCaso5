@@ -12,7 +12,7 @@ namespace プロジェクト5.Models
     public class Partido : BaseEntity
     {
         [Display(Name ="Fecha del Partido")]
-        public int FechPart { get; set; }
+        public DateTime FechPart { get; set; }
         [Display(Name ="Tiempo Jugado")]
         public TimeSpan TiemJugado { get; set; }
         [Display(Name ="Estadio")]

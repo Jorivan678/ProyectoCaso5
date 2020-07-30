@@ -1,10 +1,25 @@
 ﻿@page
-@model プロジェクト5.Pages.Team.ActualizarEquipoModel
-@{
-    ViewData["Title"] = "Editar Equipo";
-}
-<h1>Editar Equipo</h1>
-<form class="mt-3" method="post" enctype="multipart/form-data">
+@model プロジェクト5.Pages.Team.EditModel
+
+<h4>Editar el equipo @Model.Equipo.NomEquip</h4>
+<hr />
+<form method="post" class="mt-3" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Equipo.NomEquip" class="control-label"></label>
+        <input asp-for="Equipo.NomEquip" class="form-control" />
+    </div>
+    <div class="row form-group">
+        <label class="col-form-label col-sm-2" asp-for="Equipo.Logo"></label>
+        <div class="col-sm-10">
+            <div class="custom-file">
+                <input type="file" asp-for="Logo" class="custom-file-input form-control" lang="es-mx" />
+                <label class="custom-file-label" for="Logo">Escoger un archivo</label>
+                <input hidden asp-for="Equipo.Logo" />
+            </div>
+        </div>
+    </div>
+    <input type="hidden" asp-for="Equipo.Id" />
     <div class="row form-group">
         <label class="col-form-label col-sm-2" asp-for="Equipo.Status"></label>
         <div class="form-check form-check-inline">
@@ -20,31 +35,17 @@
             </label>
         </div>
     </div>
-    <div class="row form-group">
-        <label class="col-form-label col-sm-2" asp-for="Equipo.NomEquip"></label>
-        <div class="col-sm-4">
-            <input type="text" asp-for="Equipo.NomEquip" class="form-control form-text" role="textbox" />
-        </div>
-    </div>
-    <div class="row form-group">
-        <label class="col-form-label col-sm-2" asp-for="Equipo.Logo"></label>
-        <div class="col-sm-10">
-            <div class="custom-file">
-                <input type="file" asp-for="Logo" class="custom-file-input form-control" lang="es-mx" />
-                <label class="custom-file-label" for="Logo">Escoger un archivo</label>
-                <input hidden asp-for="Equipo.Logo" />
-            </div>
-        </div>
-    </div>
     <div class="d-flex justify-content-end p-2">
         <button class="btn btn-primary m-2" role="button">Guardar</button>
-        <a asp-page="/Team" class="btn btn-secondary m-2" role="button">Cancelar</a>
+        <a asp-page="./Equipos" class="btn btn-secondary m-2" role="button">Cancelar</a>
         <div class="text-danger" asp-validation-summary="All"></div>
-        <input type="hidden" asp-for="Equipo.Id" />
     </div>
 </form>
+<div>
+    <a asp-page="./Equipos">Volver a equipos</a>
+</div>
 
-@section Scripts{
+@section Scripts {
     <script>
         $(document).ready(function () {
             $('.custom-file-input').on("change", function () {
@@ -53,4 +54,5 @@
             });
         });
     </script>
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

@@ -1,0 +1,74 @@
+﻿@page
+@model プロジェクト5.Pages.Game.EditModel
+
+<h4>Partido</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Partido.FechPart" class="control-label"></label>
+                <input asp-for="Partido.FechPart" class="form-control" />
+                <span asp-validation-for="Partido.FechPart" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.TiemJugado" class="control-label"></label>
+                <input asp-for="Partido.TiemJugado" class="form-control" />
+                <span asp-validation-for="Partido.TiemJugado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.Estadio" class="control-label"></label>
+                <input asp-for="Partido.Estadio" class="form-control" />
+                <span asp-validation-for="Partido.Estadio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.IdEquipo" class="control-label"></label>
+                <select asp-for="Partido.IdEquipo" class="form-control" asp-items="ViewBag.IdEquipo"></select>
+                <span asp-validation-for="Partido.IdEquipo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.TotalJugLc" class="control-label"></label>
+                <input asp-for="Partido.TotalJugLc" class="form-control" />
+                <span asp-validation-for="Partido.TotalJugLc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.IdEquipoSub" class="control-label"></label>
+                <select asp-for="Partido.IdEquipoSub" class="form-control" asp-items="ViewBag.IdEquipoSub"></select>
+                <span asp-validation-for="Partido.IdEquipoSub" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.TotalJugVis" class="control-label"></label>
+                <input asp-for="Partido.TotalJugVis" class="form-control" />
+                <span asp-validation-for="Partido.TotalJugVis" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Partido.Id" />
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Partido.Status" /> @Html.DisplayNameFor(model => model.Partido.Status)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.CreatedAT" class="control-label"></label>
+                <input asp-for="Partido.CreatedAT" class="form-control" />
+                <span asp-validation-for="Partido.CreatedAT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Partido.UpdatedAT" class="control-label"></label>
+                <input asp-for="Partido.UpdatedAT" class="form-control" />
+                <span asp-validation-for="Partido.UpdatedAT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

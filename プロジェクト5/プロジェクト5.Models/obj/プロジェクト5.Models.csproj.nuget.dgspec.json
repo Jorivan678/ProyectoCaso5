@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj": {}
+    "D:\\Proyectos\\ProyectoCaso5\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj": {}
   },
   "projects": {
-    "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj": {
+    "D:\\Proyectos\\ProyectoCaso5\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj",
+        "projectUniqueName": "D:\\Proyectos\\ProyectoCaso5\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj",
         "projectName": "プロジェクト5.Models",
-        "projectPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj",
+        "projectPath": "D:\\Proyectos\\ProyectoCaso5\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\プロジェクト5.Models.csproj",
         "packagesPath": "C:\\Users\\Kids3\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\obj\\",
+        "outputPath": "D:\\Proyectos\\ProyectoCaso5\\事例5プロジェクト\\プロジェクト5\\プロジェクト5.Models\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Kids3\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

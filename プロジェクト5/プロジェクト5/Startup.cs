@@ -16,6 +16,8 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.CodeAnalysis.Options;
 using プロジェクト5.Models;
 using System.Text;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.AspNetCore.Mvc;
 
 namespace プロジェクト5
 {
@@ -37,10 +39,10 @@ namespace プロジェクト5
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<AppDBContext>();
 
+
         services.AddRazorPages();
             services.AddScoped<AppDBContext>();
             services.AddScoped(typeof(IRepository<>), typeof(SQLRepository<>));
-            services.AddScoped<IEquipoRepository, EquipoRepository>();
             
             services.AddRouting(option => {
                 option.LowercaseUrls = true;
