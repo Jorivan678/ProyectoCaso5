@@ -13,15 +13,14 @@ namespace プロジェクト5.Pages.Game
 {
     public class EditModel : PageModel
     {
-        private readonly プロジェクト5.Services.AppDBContext _context;
+        [BindProperty]
+        public Partido Partido { get; set; }
+        private readonly AppDBContext _context;
 
-        public EditModel(プロジェクト5.Services.AppDBContext context)
+        public EditModel(AppDBContext context)
         {
             _context = context;
         }
-
-        [BindProperty]
-        public Partido Partido { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -38,13 +37,11 @@ namespace プロジェクト5.Pages.Game
             {
                 return NotFound();
             }
-           ViewData["IdEquipo"] = new SelectList(_context.Equipos, "Id", "Id");
-           ViewData["IdEquipoSub"] = new SelectList(_context.EquipoSubs, "Id", "Id");
+           ViewData["IdEquipo"] = new SelectList(_context.Equipos, "Id", "NomEquip");
+           ViewData["IdEquipoSub"] = new SelectList(_context.EquipoSubs, "Id", "Equipo.NomEquip");
             return Page();
         }
 
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -56,6 +53,7 @@ namespace プロジェクト5.Pages.Game
 
             try
             {
+                _context.Entry(Partido).Property(P => P.CreatedAT).IsModified = false;
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -70,7 +68,7 @@ namespace プロジェクト5.Pages.Game
                 }
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./Partidos");
         }
 
         private bool PartidoExists(int id)

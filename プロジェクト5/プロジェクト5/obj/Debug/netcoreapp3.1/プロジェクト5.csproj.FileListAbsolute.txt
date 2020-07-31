@@ -529,6 +529,9 @@ D:\Proyectos\ProyectoCaso5\事例5プロジェクト\プロジェクト5\プロ�
 D:\Proyectos\ProyectoCaso5\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Pages\Player\Edit.cshtml.g.cs
 D:\Proyectos\ProyectoCaso5\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Pages\Game\AgregarPartido.cshtml.g.cs
 D:\Proyectos\ProyectoCaso5\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Pages\Game\Delete.cshtml.g.cs
-D:\Proyectos\ProyectoCaso5\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Pages\Game\Details.cshtml.g.cs
 D:\Proyectos\ProyectoCaso5\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Pages\Game\Edit.cshtml.g.cs
 D:\Proyectos\ProyectoCaso5\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Pages\Game\Partidos.cshtml.g.cs
+D:\Proyectos\ProyectoCaso5\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Pages\GameResult\Create.cshtml.g.cs
+D:\Proyectos\ProyectoCaso5\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Pages\GameResult\Delete.cshtml.g.cs
+D:\Proyectos\ProyectoCaso5\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Pages\GameResult\Details.cshtml.g.cs
+D:\Proyectos\ProyectoCaso5\事例5プロジェクト\プロジェクト5\プロジェクト5\obj\Debug\netcoreapp3.1\Razor\Pages\GameResult\Edit.cshtml.g.cs

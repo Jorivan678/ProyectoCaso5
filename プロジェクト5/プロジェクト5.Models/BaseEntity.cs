@@ -13,9 +13,9 @@ namespace プロジェクト5.Models
         public int Id { get; set; }
         [Display(Name="Estado")]
         public bool Status { get; set; }
-        [Display(Name ="Fecha de creación")]
+        [Display(Name ="Añadido el")]
         public DateTime CreatedAT { get; set; } = DateTime.Now;
-        [Display(Name = "Fecha de actualización")]
+        [Display(Name = "Actualizado el")]
         public DateTime? UpdatedAT { get; set; } = DateTime.Now;
     }
 }
