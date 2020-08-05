@@ -1,0 +1,83 @@
+﻿@page
+@model プロジェクト5.Pages.GameResult.ResultadosModel
+@{
+    ViewData["Title"] = "Resultados de los partidos";
+}
+<h2>@ViewData["Title"]</h2>
+<p>
+    <a asp-page="./Create" class="btn btn-primary m-2" role="button">Agregar resultado</a>
+</p>
+<table class="table table-striped tale-row-group">
+    <thead class="table-header-group">
+        <tr>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.ResultadoPartido.FirstOrDefault().Partido)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.ResultadoPartido.FirstOrDefault().Jugador)
+            </th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col">
+                @Html.DisplayNameFor(x => x.ResultadoPartido.FirstOrDefault().Goles)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.ResultadoPartido.FirstOrDefault().Asistencias)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.ResultadoPartido.FirstOrDefault().AutoGoles)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.ResultadoPartido.FirstOrDefault().Penales)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.ResultadoPartido.FirstOrDefault().TarjAmarilla)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.ResultadoPartido.FirstOrDefault().TarjRoja)
+            </th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ResultadoPartido)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Partido.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Jugador.NomJug)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Jugador.ApellidoP)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Jugador.ApellidoM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Goles)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Asistencias)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AutoGoles)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Penales)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TarjAmarilla)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TarjRoja)
+                </td>
+                <td><a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm">Editar</a></td>
+                <td><a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Eliminar</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-page="/Game/Partidos">Regresar a partidos</a>

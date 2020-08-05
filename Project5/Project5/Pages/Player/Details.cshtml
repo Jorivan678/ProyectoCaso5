@@ -1,0 +1,83 @@
+﻿@page
+@model プロジェクト5.Pages.Player.DetailsModel
+
+<div>
+    <h4>Jugador</h4>
+    <hr />
+    @if(Model.Jugador.CreatedAT != null)
+    {
+        var imgPath = $"~/images/{(string.IsNullOrEmpty(Model.Jugador.FotoJug) ? "" : Model.Jugador.FotoJug)}";
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Jugador.FotoJug)
+        </dt>
+        <dd class="col-sm-10">
+            <img src="@imgPath" asp-append-version="true" width="100" height="100">
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Jugador.NomJug)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Jugador.NomJug)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Jugador.ApellidoP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Jugador.ApellidoP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Jugador.ApellidoM)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Jugador.ApellidoM)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Jugador.Posicion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Jugador.Posicion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Jugador.FechNac)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Jugador.FechNac)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Jugador.Equipo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Jugador.Equipo.NomEquip)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Jugador.Status)
+        </dt>
+        <dd class="col-sm-10">
+            @if (Model.Jugador.Status == true)
+            {
+                <p>Activo</p>
+            }
+            else
+            {
+                <p>Inactivo</p>
+            }
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Jugador.CreatedAT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Jugador.CreatedAT)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Jugador.UpdatedAT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Jugador.UpdatedAT)
+        </dd>
+    </dl>
+    }
+</div>
+<div>
+    <a asp-page="./Jugadores">Volver a jugadores</a>
+</div>

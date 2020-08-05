@@ -1,0 +1,11 @@
+﻿@page
+@model プロジェクト5.Pages.GameResult.DeleteModel
+
+<h3>¿Está seguro de querer borrar este resultado?</h3>
+<div>
+<form method="post">
+    <input type="hidden" asp-for="ResultadoPartido.Id" />
+    <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+    <a asp-page="./Resultados" class="btn btn-success m-2" role="button">Cancelar</a>
+</form>
+</div>

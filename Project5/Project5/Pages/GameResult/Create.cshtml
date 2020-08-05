@@ -1,0 +1,61 @@
+﻿@page
+@model プロジェクト5.Pages.GameResult.CreateModel
+
+<h4>Agregar resultado de un partido</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ResultadoPartido.Goles" class="control-label"></label>
+                <input asp-for="ResultadoPartido.Goles" class="form-control" />
+                <span asp-validation-for="ResultadoPartido.Goles" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResultadoPartido.Asistencias" class="control-label"></label>
+                <input asp-for="ResultadoPartido.Asistencias" class="form-control" />
+                <span asp-validation-for="ResultadoPartido.Asistencias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResultadoPartido.AutoGoles" class="control-label"></label>
+                <input asp-for="ResultadoPartido.AutoGoles" class="form-control" />
+                <span asp-validation-for="ResultadoPartido.AutoGoles" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResultadoPartido.Penales" class="control-label"></label>
+                <input asp-for="ResultadoPartido.Penales" class="form-control" />
+                <span asp-validation-for="ResultadoPartido.Penales" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResultadoPartido.TarjAmarilla" class="control-label"></label>
+                <input asp-for="ResultadoPartido.TarjAmarilla" class="form-control" />
+                <span asp-validation-for="ResultadoPartido.TarjAmarilla" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResultadoPartido.TarjRoja" class="control-label"></label>
+                <input asp-for="ResultadoPartido.TarjRoja" class="form-control" />
+                <span asp-validation-for="ResultadoPartido.TarjRoja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResultadoPartido.IdPartido" class="control-label"></label>
+                <select asp-for="ResultadoPartido.IdPartido" class ="form-control" asp-items="ViewBag.IdPartido"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResultadoPartido.IdJugador" class="control-label"></label>
+                <select asp-for="ResultadoPartido.IdJugador" class ="form-control" asp-items="ViewBag.IdJugador"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Resultados">Volver a resultados</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,56 @@
+﻿@page
+@model プロジェクト5.Pages.Team.AgregarEquipoModel
+@{
+    ViewData["Title"] = "Agregar Equipo";
+}
+
+<h1>Agregar Equipo</h1>
+<form class="mt-3" method="post" enctype="multipart/form-data">
+    <div class="row form-group">
+        <label class="col-form-label col-sm-2" asp-for="Equipo.Status"></label>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label" for="radio1">
+                <input type="radio" asp-for="Equipo.Status" class="form-check-label" role="radio" value="true" id="radio1" />
+                Activo
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label" for="radio2">
+                <input type="radio" asp-for="Equipo.Status" class="form-check-label" role="radio" value="false" id="radio2" />
+                Inactivo
+            </label>
+        </div>
+    </div>
+    <div class="row form-group">
+        <label class="col-form-label col-sm-2" asp-for="Equipo.NomEquip"></label>
+        <div class="col-sm-4">
+            <input type="text" asp-for="Equipo.NomEquip" class="form-control form-text" role="textbox" />
+        </div>
+    </div>
+    <div class="row form-group">
+        <label class="col-form-label col-sm-2" asp-for="Equipo.Logo"></label>
+        <div class="col-sm-10">
+            <div class="custom-file">
+                <input type="file" asp-for="Logo" class="custom-file-input form-control" lang="es-mx" />
+                <label class="custom-file-label" for="Logo">Escoger un archivo</label>
+                <input hidden asp-for="Equipo.Logo" />
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-end p-2">
+        <button class="btn btn-primary m-2" role="button">Guardar</button>
+            <a asp-page="./Equipos" class="btn btn-secondary m-2" role="button">Cancelar</a>
+        <div class="text-danger" asp-validation-summary="All"></div>
+    </div>
+</form>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('.custom-file-input').on("change", function () {
+                var filename = $(this).val().split("\\").pop();
+                $(this).next('.custom-file-label').html(filename);
+            });
+        });
+    </script>
+ }
