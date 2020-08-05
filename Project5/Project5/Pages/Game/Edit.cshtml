@@ -26,6 +26,7 @@
                 <label asp-for="Partido.IdEquipo" class="control-label">Equipo Local</label>
                 <select asp-for="Partido.IdEquipo" class="form-control" asp-items="ViewBag.IdEquipo"></select>
             </div>
+            <input type="hidden" asp-for="Partido.Id" />
             <div class="form-group">
                 <label asp-for="Partido.TotalJugLc" class="control-label"></label>
                 <input asp-for="Partido.TotalJugLc" class="form-control" />
@@ -35,6 +36,7 @@
                 <label asp-for="Partido.IdEquipoSub" class="control-label">Equipo Visitante</label>
                 <select asp-for="Partido.IdEquipoSub" class="form-control" asp-items="ViewBag.IdEquipoSub"></select>
             </div>
+            <input type="hidden" asp-for="Partido.Id" />
             <div class="form-group">
                 <label asp-for="Partido.TotalJugVis" class="control-label"></label>
                 <input asp-for="Partido.TotalJugVis" class="form-control" />

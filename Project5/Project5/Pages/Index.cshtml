@@ -1,10 +1,33 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "I-SPORT by MALIX FC";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <h1>Bienvenido a @ViewData["Title"]</h1>
+<br />
+<br />
+    <div class="slider">
+        <div><img width="1000" src="/images/1.png" class="imagen" alt="Slider_1"></div>
+        <div><img width="1000" src="/images/2.png" class="imagen" alt="Slider_2"></div>
+        <div><img width="1000" src="/images/3.png" class="imagen" alt="Slider_3"></div>
+        <div><img width="1000" src="/images/4.png" class="imagen" alt="Slider_4"></div>
+        <div><img width="1000" src="/images/5.png" class="imagen" alt="Slider_5"></div>
+        <div><img width="1000" src="/images/6.png" class="imagen" alt="Slider_6"></div>
+        <div><img width="1000" src="/images/7.png" class="imagen" alt="Slider_7"></div>
+        <div><img width="1000" src="/images/8.png" class="imagen" alt="Slider_8"></div>
+        <div><img width="1000" src="/images/9.png" class="imagen" alt="Slider_9"></div>
+        <div><img width="1000" src="/images/10.png" class="imagen" alt="Slider_10"></div>
+    </div>
+
+
+@section scripts{
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                auto: true
+            });
+        });
+    </script>
+}

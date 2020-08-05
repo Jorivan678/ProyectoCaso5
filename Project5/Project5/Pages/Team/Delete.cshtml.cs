@@ -55,7 +55,7 @@ namespace プロジェクト5.Pages.Team
                 await _context.SaveChangesAsync();
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./Equipos");
         }
     }
 }

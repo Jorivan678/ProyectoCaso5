@@ -1511,19 +1511,9 @@ pre code {
   }
 }
 
-.tablePDF, td, th{
-    border: 1px solid black;
+.slider {
+    left: 25%;
 }
-
-.tablePDF {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.thPDF {
-    height: 50px;
-}
-
 
 .table {
     width: 100%;
