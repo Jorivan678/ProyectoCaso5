@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\lib\pdfmake\**" />
+    <Content Remove="wwwroot\lib\pdfmake\**" />
+    <EmbeddedResource Remove="wwwroot\lib\pdfmake\**" />
+    <None Remove="wwwroot\lib\pdfmake\**" />
+    <TypeScriptCompile Remove="wwwroot\lib\pdfmake\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.6" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.6" />
@@ -29,10 +37,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Project5.Models\Project5.Models.csproj" />
     <ProjectReference Include="..\Project5.Services\Project5.Services.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\lib\pdfmake\" />
   </ItemGroup>
 
 </Project>

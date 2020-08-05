@@ -15,7 +15,7 @@ namespace プロジェクト5.Pages.Game
         public IList<Partido> Partido { get; set; }
         public IList<Equipo> Equipo { get; set; }
         public IList<EquipoSub> EquipoSub { get; set; }
-        public IList<ResultadoPartido> Resultados { get; set; }
+        public IList<ResultadoPartido> ResultadoPartido { get; set; }
         private readonly AppDBContext _context;
 
         public PartidoModel(AppDBContext context)
@@ -30,12 +30,7 @@ namespace プロジェクト5.Pages.Game
             Partido = await _context.Partidos
                 .Include(p => p.Equipo)
                 .Include(p => p.EquipoSub).ToListAsync();
-        }
-
-        public async Task<IActionResult> OnGetAsyncResultados()
-        {
-            var lst = await _context.ResultadoPartidos.Include(p => p.Partido).Include(p => p.Jugador).ToListAsync();
-            return new JsonResult(lst);
+            ResultadoPartido = await _context.ResultadoPartidos.Include(p => p.Partido).Include(p => p.Jugador).ToListAsync();
         }
     }
 }
