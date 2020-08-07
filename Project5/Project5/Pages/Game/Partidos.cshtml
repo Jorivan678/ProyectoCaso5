@@ -107,6 +107,14 @@
     </tbody>
 </table>
 
+<form>
+    <p>
+        <select asp-for="TeamPlayer" asp-items="Model.Player">
+            <option value="">All</option>
+        </select>
+        <input type="submit" value="Filtrar" />
+    </p>
+</form>
 
 <div id="Reporte">
     <table class="table table-dark">
