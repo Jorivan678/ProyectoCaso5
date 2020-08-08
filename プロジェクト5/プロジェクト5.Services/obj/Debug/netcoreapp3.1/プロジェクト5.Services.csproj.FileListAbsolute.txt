@@ -1,0 +1,15 @@
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\bin\Debug\netcoreapp3.1\プロジェクト5.Services.deps.json
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\bin\Debug\netcoreapp3.1\プロジェクト5.Services.dll
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\obj\Debug\netcoreapp3.1\プロジェクト5.Services.csprojAssemblyReference.cache
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\obj\Debug\netcoreapp3.1\プロジェクト5.Services.AssemblyInfoInputs.cache
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\obj\Debug\netcoreapp3.1\プロジェクト5.Services.AssemblyInfo.cs
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\bin\Debug\netcoreapp3.1\プロジェクト5.Models.dll
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\bin\Debug\netcoreapp3.1\プロジェクト5.Services.pdb
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\bin\Debug\netcoreapp3.1\プロジェクト5.Models.pdb
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\obj\Debug\netcoreapp3.1\プロジェクト5.Services.csproj.CopyComplete
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\obj\Debug\netcoreapp3.1\プロジェクト5.Services.dll
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\obj\Debug\netcoreapp3.1\プロジェクト5.Services.pdb
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\bin\Debug\netcoreapp3.1\プロジェクト5.Services.runtimeconfig.json
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\bin\Debug\netcoreapp3.1\プロジェクト5.Services.runtimeconfig.dev.json
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\obj\Debug\netcoreapp3.1\プロジェクト5.Services.genruntimeconfig.cache
+D:\Proyectos\ProyectoCaso5\プロジェクト5\プロジェクト5.Services\obj\Debug\netcoreapp3.1\プロジェクト5.Services.csproj.CoreCompileInputs.cache

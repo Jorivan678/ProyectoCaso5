@@ -1,0 +1,67 @@
+﻿@page
+@model プロジェクト5.Pages.GameResult.EditModel
+@{ 
+    ViewData["Title"] = "Editar estadística de partido";
+}
+
+<h4>Editar un resultado del partido @Model.EstadisticaPartido.IdPartido</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="EstadisticaPartido.Id" />
+            <div class="form-group">
+                <label asp-for="EstadisticaPartido.Championship" class="control-label"></label>
+                <input asp-for="EstadisticaPartido.Championship" class="form-control" />
+                <span asp-validation-for="EstadisticaPartido.Championship" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticaPartido.Goles" class="control-label"></label>
+                <input asp-for="EstadisticaPartido.Goles" class="form-control" />
+                <span asp-validation-for="EstadisticaPartido.Goles" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticaPartido.Tiros" class="control-label"></label>
+                <input asp-for="EstadisticaPartido.Tiros" class="form-control" />
+                <span asp-validation-for="EstadisticaPartido.Tiros" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticaPartido.Posesion" class="control-label"></label>
+                <input asp-for="EstadisticaPartido.Posesion" class="form-control" />
+                <span asp-validation-for="EstadisticaPartido.Posesion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticaPartido.Aciertos" class="control-label"></label>
+                <input asp-for="EstadisticaPartido.Aciertos" class="form-control" />
+                <span asp-validation-for="EstadisticaPartido.Aciertos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticaPartido.Aereos" class="control-label"></label>
+                <input asp-for="EstadisticaPartido.Aereos" class="form-control" />
+                <span asp-validation-for="EstadisticaPartido.Aereos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticaPartido.Rating" class="control-label"></label>
+                <input asp-for="EstadisticaPartido.Rating" class="form-control" />
+                <span asp-validation-for="EstadisticaPartido.Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticaPartido.IdPartido" class="control-label">Identificador del partido</label>
+                <select asp-for="EstadisticaPartido.IdPartido" class="form-control" asp-items="ViewBag.IdPartido"></select>
+                <span asp-validation-for="EstadisticaPartido.IdPartido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Estadisticas">Volver a estadísticas</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

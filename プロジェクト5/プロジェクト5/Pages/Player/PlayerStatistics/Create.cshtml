@@ -1,0 +1,89 @@
+﻿@page
+@model プロジェクト5.Pages.Player.PlayerStatistics.CreateModel
+@{
+    ViewData["Title"] = "Agregar estadística";
+}
+<h4>Agregar estadísticas a un Jugador</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EstadisticasJugador.IdJugador" class="control-label">Jugador</label>
+                <select asp-for="EstadisticasJugador.IdJugador" class="form-control" asp-items="ViewBag.IdJugador"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticasJugador.IdPartido" class="control-label">Partido</label>
+                <select asp-for="EstadisticasJugador.IdPartido" class="form-control" asp-items="ViewBag.IdPartido"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticasJugador.Minutos" class="control-label"></label>
+                <input asp-for="EstadisticasJugador.Minutos" class="form-control" />
+                <span asp-validation-for="EstadisticasJugador.Minutos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticasJugador.Asistencias" class="control-label"></label>
+                <input asp-for="EstadisticasJugador.Asistencias" class="form-control" />
+                <span asp-validation-for="EstadisticasJugador.Asistencias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticasJugador.TarjAmar" class="control-label"></label>
+                <input asp-for="EstadisticasJugador.TarjAmar" class="form-control" />
+                <span asp-validation-for="EstadisticasJugador.TarjAmar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticasJugador.TarjRoja" class="control-label"></label>
+                <input asp-for="EstadisticasJugador.TarjRoja" class="form-control" />
+                <span asp-validation-for="EstadisticasJugador.TarjRoja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticasJugador.TirosporPart" class="control-label"></label>
+                <input asp-for="EstadisticasJugador.TirosporPart" class="form-control" />
+                <span asp-validation-for="EstadisticasJugador.TirosporPart" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticasJugador.AciertoPase" class="control-label"></label>
+                <input asp-for="EstadisticasJugador.AciertoPase" class="form-control" />
+                <span asp-validation-for="EstadisticasJugador.AciertoPase" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticasJugador.Aereos" class="control-label"></label>
+                <input asp-for="EstadisticasJugador.Aereos" class="form-control" />
+                <span asp-validation-for="EstadisticasJugador.Aereos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" asp-for="EstadisticasJugador.JugadordelPart">Jugador del partido</label>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="radio1">
+                        <input type="radio" asp-for="EstadisticasJugador.JugadordelPart" class="form-check-label" role="radio" value="true" id="radio1" />
+                        Si
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="radio2">
+                        <input type="radio" asp-for="EstadisticasJugador.JugadordelPart" class="form-check-label" role="radio" value="false" id="radio2" />
+                        No
+                    </label>
+                    <span asp-validation-for="EstadisticasJugador.JugadordelPart" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadisticasJugador.Rating" class="control-label"></label>
+                <input asp-for="EstadisticasJugador.Rating" class="form-control" />
+                <span asp-validation-for="EstadisticasJugador.Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./EstadisticasJugador">Volver a estadísticas</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

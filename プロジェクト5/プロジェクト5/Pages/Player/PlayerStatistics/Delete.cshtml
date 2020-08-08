@@ -1,0 +1,11 @@
+﻿@page
+@model プロジェクト5.Pages.Player.PlayerStatistics.DeleteModel
+
+<h3>¿Está seguro de querer borrar esta estadística?</h3>
+<div>
+    <form method="post">
+        <input type="hidden" asp-for="EstadisticasJugador.Id" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-page="./EstadisticasJugador" class="btn btn-success m-2" role="button">Cancelar</a>
+    </form>
+</div>
